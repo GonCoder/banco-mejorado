@@ -1,0 +1,303 @@
+/* ======= RESET BÁSICO ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= ESTILO GENERAL ======= */
+body {
+  background-color: #181818;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex; /* centramos el contenido */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* ======= TITULOS ======= */
+h1, h2, h3, h4, h5, h6 {
+  color: #00bcd4;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ======= CONTENEDOR ======= */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: 2rem;
+  background-color: #202020;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* ======= FORMULARIO ======= */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #444;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button,
+input[type="submit"] {
+  background-color: #00bcd4;
+  color: #181818;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #4dd0e1;
+}
+
+input[type="reset"] {
+  background-color: #00d498;
+  color: #181818;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+input[type="reset"]:hover {
+  background-color: #4de17e;
+}
+
+/* ======= TABLA ======= */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  background-color: #222;
+  margin-bottom: 2rem;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+th {
+  background-color: #00bcd4;
+  color: #181818;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+/* ======= BOTONES CRUD ESPECÍFICOS ======= */
+.edit-btn {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #42a5f5;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ef5350;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.eliminar {display: inline-block;
+  background-color: #f44336 !important;
+  color: white !important;
+  border: none;
+  padding: 5px 10px !important;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.eliminar:hover {
+  background-color: #d32f2f !important;
+}
+
+.modificar:hover {
+  background-color: #3f51b5 !important;
+}
+
+.modificar {display: inline-block;
+  background-color: #0800ff !important;
+  color: white !important;
+  border: none;
+  padding: 5px 10px !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.resaltado {
+  background-color: #151823 !important;
+}
+
+.aceptar {display: inline-block;
+  background-color: #00bcd4 !important;
+  color: white !important;
+  border: none;
+  padding: 5px 10px !important;
+  cursor: pointer;
+  border-radius: 5px !important;
+  margin-bottom: 10px;
+}
+.aceptar:hover {
+  background-color: #4dd0e1 !important;
+}
+
+input:disabled {
+  background-color: #f0f0f0 !important ;   /* cambia el fondo */
+  color: #999  !important;                 /* cambia el color del texto */
+  border: 1px dashed #ccc !important;      /* cambia el borde */
+  cursor: not-allowed !important;          /* icono de prohibido */
+  opacity: 1 !important;                   /* evita que se ponga “semi-transparente” */
+}
+
+.mensaje {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .mensaje.exito {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .mensaje.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .ordenar {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .ordenar:hover {
+            text-decoration: underline;
+        }
+        
+        .ordenar::after {
+            content: ' ↕';
+            font-size: 0.8em;
+        }
+        
+        .ordenar.asc::after {
+            content: ' ↑';
+        }
+        
+        .ordenar.desc::after {
+            content: ' ↓';
+        }
+        
+        .resaltado {
+            background-color: #85a8ba !important;
+        }
+        
+
+        th a {
+            color: rgb(0, 0, 63) !important;
+           
+        }
+
+        .cancelar-btn {
+          display: inline-block;
+          background-color: #e53935 !important;
+          color: #fff !important;
+          border: none;
+          padding: 0.5rem 1.2rem !important;
+          border-radius: 5px !important;
+          cursor: pointer;
+          font-size: 1rem;
+          text-decoration: none !important;
+          transition: background-color 0.3s ease;
+        }
+
+        .cancelar-btn:hover {
+          background-color: #b71c1c !important;
+        }
