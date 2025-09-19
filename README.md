@@ -38,7 +38,6 @@ Vista previa de la aplicación (capturas en la carpeta `img` del proyecto):
 ![Captura 4](./img/Captura%20de%20pantalla%202025-09-19%204.png)
 ![Captura 5](./img/Captura%20de%20pantalla%202025-09-19%205.png)
 
-> ⚠️ **Nota:** En los nombres de archivo de las imágenes se han sustituido los espacios por `%20` para que los enlaces funcionen correctamente en GitHub.
 
 ---
 
